@@ -23,6 +23,8 @@ export class TestComponent implements OnInit {
     fontStyle: 'italic'
   };
 
+  public onClick = '';
+
   constructor() { }
 
   ngOnInit() {
@@ -30,6 +32,11 @@ export class TestComponent implements OnInit {
 
   greetUser() {
     return 'Hello' + this.name;
+  }
+
+  clickEvent() {
+    console.log('Heleeee');
+    this.onClick = 'Ramin';
   }
 
 }
