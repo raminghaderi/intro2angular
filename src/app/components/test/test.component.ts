@@ -24,6 +24,7 @@ export class TestComponent implements OnInit {
   };
 
   public onClick = '';
+  public twoWayBinding = '';
 
   constructor() { }
 

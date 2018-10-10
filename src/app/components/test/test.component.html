@@ -17,5 +17,6 @@
 
 <input #templateReferenceVariable type='text'/>
 <button (click)='templateReferenceVariableMethod(templateReferenceVariable.value)'>Go!</button>
-
-
+<br>
+<input [(ngModel)]='twoWayBinding' type='text'>
+<h2>{{twoWayBinding}}</h2>
