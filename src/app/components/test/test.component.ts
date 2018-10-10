@@ -34,9 +34,13 @@ export class TestComponent implements OnInit {
     return 'Hello' + this.name;
   }
 
-  clickEvent() {
+  eventBinding() {
     console.log('Heleeee');
     this.onClick = 'Ramin';
+  }
+
+  templateReferenceVariableMethod(input) {
+    console.log(input);
   }
 
 }

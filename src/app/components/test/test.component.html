@@ -12,7 +12,10 @@
 <h2 [style.color]='highlightColor'>Ramin</h2>
 <h2 [ngStyle]='titleStyle'>Raminehaaaaaaa</h2>
 
-<button (click)="clickEvent()">Click me!</button>
+<button (click)="eventBinding()">Click me!</button>
 <h2>{{onClick}}</h2>
+
+<input #templateReferenceVariable type='text'/>
+<button (click)='templateReferenceVariableMethod(templateReferenceVariable.value)'>Go!</button>
 
 
