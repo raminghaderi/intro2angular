@@ -17,6 +17,24 @@
 
 <input #templateReferenceVariable type='text'/>
 <button (click)='templateReferenceVariableMethod(templateReferenceVariable.value)'>Go!</button>
+
 <br>
+
 <input [(ngModel)]='twoWayBinding' type='text'>
 <h2>{{twoWayBinding}}</h2>
+
+<h2 *ngIf='intro2Angular; else elseBlock'>Intro2Angular</h2>
+
+<ng-template #elseBlock>
+  <h2>Intro2Angular is Hidden</h2>
+</ng-template>
+
+<div *ngIf='intro2Angular; then thenBlock; else elseBlockk'></div>
+
+<ng-template #thenBlock>
+  <p>Then Block</p>
+</ng-template>
+
+<ng-template #elseBlockk>
+  <p>Else Block</p>
+</ng-template>
