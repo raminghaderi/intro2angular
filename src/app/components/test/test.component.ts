@@ -27,6 +27,7 @@ export class TestComponent implements OnInit {
   public twoWayBinding = '';
   public intro2Angular = true;
   public color = 'black';
+  public colors = ['red', 'black', 'white', 'blue'];
 
   constructor() { }
 
