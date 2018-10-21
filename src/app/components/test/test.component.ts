@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -30,6 +30,7 @@ export class TestComponent implements OnInit {
   public colors = ['red', 'black', 'white', 'blue'];
 
   @Input() public parentData;
+  @Output() public childEvent = new EventEmitter();
 
   constructor() { }
 
@@ -47,6 +48,10 @@ export class TestComponent implements OnInit {
 
   templateReferenceVariableMethod(input) {
     console.log(input);
+  }
+
+  fireEvent() {
+    this.childEvent.emit('Hey Ramin, I am coming from a child component');
   }
 
 }

@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'intro2angular';
   public name = 'Ramin';
+  public message = '';
 }
