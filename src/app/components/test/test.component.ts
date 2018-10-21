@@ -32,6 +32,15 @@ export class TestComponent implements OnInit {
   @Input() public parentData;
   @Output() public childEvent = new EventEmitter();
 
+  public pipeTutorial = 'Codevolution';
+  public pipeMessage = 'Welcome to codevolution';
+  public person = {
+    'firstName': 'Ramin',
+    'lastName': 'Ghaderi'
+  };
+
+  public date = new Date();
+
   constructor() { }
 
   ngOnInit() {

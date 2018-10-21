@@ -53,3 +53,26 @@
 <h2>{{parentData}}</h2>
 
 <button (click)='fireEvent()'>Send Event</button>
+
+<h2>{{ pipeTutorial | lowercase}}</h2>
+<h2>{{ pipeTutorial | uppercase}}</h2>
+<h2>{{ pipeTutorial | slice:3:5}}</h2>
+<h2>{{ pipeMessage | titlecase}}</h2>
+
+<h2>{{ person | json}}</h2>
+
+<h2>{{ 6.347 | number:'1.2-3'}}</h2>
+<h2>{{ 6.347 | number:'2.2-5'}}</h2>
+<h2>{{ 6.347 | number:'1.1-2'}}</h2>
+
+<h2>{{ 0.25 | percent }}</h2>
+
+<h2>{{ 0.25 | currency }}</h2>
+<h2>{{ 0.25 | currency:'EUR' }}</h2>
+
+<h2>{{ date }}</h2>
+<h2>{{ date | date:'short' }}</h2>
+<h2>{{ date | date:'shortTime' }}</h2>
+<h2>{{ date | date:'shortDate' }}</h2>
+
+
