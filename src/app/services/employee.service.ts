@@ -2,7 +2,7 @@ import { catchError } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { IEmployee } from '../interfaces/employee';
-import { Observable, of } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 
 
 @Injectable({
@@ -17,7 +17,12 @@ private url = '../../assets/data/employees1.json';
   getEmployees(): Observable<IEmployee[]> {
     return this.http.get<IEmployee[]>(this.url)
                     .pipe(
-                      catchError(error => of(error.message))
+                      catchError(this.handleError)
                     );
   }
+
+  private handleError(error: HttpErrorResponse) {
+    return throwError(error.message || error);
+ }
+
 }
