@@ -9,6 +9,7 @@ import { EmployeeDetailComponent } from './components/employee-detail/employee-d
 import { EmployeeService } from './services/employee.service';
 
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

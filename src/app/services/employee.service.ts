@@ -10,7 +10,7 @@ import { Observable, throwError } from 'rxjs';
 })
 export class EmployeeService {
 
-private url = '../../assets/data/employees1.json';
+private url = '../../assets/data/employees.json';
 
   constructor(private http: HttpClient) { }
 

@@ -1,13 +1,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<h1>Test</h1>
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
 </div>
 <p>{{ message }}</p>
+<!--
 <app-test (childEvent)='message=$event' [parentData]='name'></app-test>
-<app-employee-list></app-employee-list>
-<app-employee-detail></app-employee-detail>
-
-
-
+-->
+<nav>
+  <li>
+    <ul>
+        <a routerLink='/employee-list'>Employee List</a>
+    </ul>
+    <ul>
+        <a routerLink='/employee-detail'>Employee Detail</a>
+    </ul>
+  </li>
+</nav>
+<router-outlet></router-outlet>
